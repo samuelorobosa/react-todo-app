@@ -47,8 +47,8 @@ deleteTodo = (id) => {
 
 
 componentDidMount(){
-	const todos = JSON.parse(localStorage.getItem("todos"));
-	this.setState({todos})
+	const parsed = JSON.parse(localStorage.getItem("todos"));
+	this.setState({todos: parsed === null ? []:parsed,})
 }
 
 inputTodo = (message)=>{
@@ -68,10 +68,6 @@ inputTodo = (message)=>{
 
 
 	render() {
-
-		if( !this.state.recipe.length ) {
-        return <p>No recipe</p>;
-    }
 		return (
 			<div>
 			<h1>Todo App</h1>
