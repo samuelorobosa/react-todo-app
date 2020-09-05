@@ -1,0 +1,19 @@
+ /* navyblue: rgb(10,25,47 )
+        green:  rgb(100,255,218)
+        slate:  #ccd6f6*/
+ 
+@font-face{
+    font-family: Cotham-Sans;
+    src: url(./fonts/CothamSans.otf)
+}
+
+ body{
+     font-family: Cotham-Sans;
+     line-height: 1.4;
+     background-color:  rgb(10,25,47 );
+     color:  #ccd6f6;
+ }
+
+ h1{
+ 	text-align: center;
+ }

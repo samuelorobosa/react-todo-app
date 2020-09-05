@@ -1,0 +1,32 @@
+.input_color{
+	background-color:  white;
+	border: 1px solid black;
+	padding: 2vh;
+	height: 5vh;
+	font-size: 120%;
+}
+
+input:focus{
+	outline: 1px solid #64ffda;
+	outline-offset: -2px;
+}
+
+.buttonStyle{
+	background-color: inherit;
+	color: #64ffda;
+	margin-left: 6px;
+	border: 1px solid #64ffda;
+	border-radius: 2px;
+	padding: 4px 25px; 
+	height: 6vh;
+	transition: all 1s ease;
+}
+
+button:focus{
+	outline:none;
+}
+
+button:hover{
+	transform: scale(1.1,1.1);
+	transition: all 500ms ease;
+}

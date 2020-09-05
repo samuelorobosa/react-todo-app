@@ -1,0 +1,19 @@
+input[type="checkbox"]{
+	background: rgb(100,255,218);
+}
+
+.container{
+	display: flex;
+	justify-content: space-between;
+	background-color: #303C55;
+	margin: 1% 0;
+	padding: 1% 2px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 2px;
+	}
+
+.delete {
+	color: rgb(100,255,218);
+	cursor: crosshair;
+}

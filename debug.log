@@ -1,0 +1,4 @@
+[0820/223231.696:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0820/223233.031:ERROR:exception_snapshot_win.cc(98)] thread ID 11912 not found in process
+[0821/210343.254:ERROR:settings.cc(320)] Settings magic is not 1129342067
+[0827/170519.280:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
