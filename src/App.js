@@ -68,6 +68,10 @@ inputTodo = (message)=>{
 
 
 	render() {
+
+		if( !this.state.recipe.length ) {
+        return <p>No recipe</p>;
+    }
 		return (
 			<div>
 			<h1>Todo App</h1>
