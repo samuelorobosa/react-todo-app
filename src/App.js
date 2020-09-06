@@ -39,6 +39,7 @@ finishTask = (id) =>{
 
 
 deleteTodo = (id) => {
+	if (window.confirm("Delete this todo? Ko necesstri sha")){
 	this.setState(
 			{
 				todos: [...this.state.todos.filter(
@@ -46,7 +47,9 @@ deleteTodo = (id) => {
 					)]
 			},
 			this.saveToLocal
-		)
+		)	
+	}
+	
 }
 
 
