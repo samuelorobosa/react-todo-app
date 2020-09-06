@@ -17,11 +17,13 @@ class App extends React.Component {
 
 saveToLocal = () =>{
 	const local = this.state.todos;
-	localStorage.setItem('todos', JSON.stringify(local))
+	window.localStorage.setItem('todos', JSON.stringify(local))
 }
 
 
 finishTask = (id) =>{
+
+
 	this.setState(
 			{
 				todos: this.state.todos.map (todo => {
@@ -29,10 +31,12 @@ finishTask = (id) =>{
 						todo.completed = !todo.completed
 					}
 					return todo
-				})
-			}
+				}
+				)
+			}, this.saveToLocal
 		)
 }
+
 
 deleteTodo = (id) => {
 	this.setState(
@@ -60,8 +64,8 @@ inputTodo = (message)=>{
 		completed: false
 	}
 
-  this.setState({todos:[...this.state.todos, newTodo]}, this.saveToLocal)
-
+  this.setState({todos:[...this.state.todos, newTodo]}, this.saveToLocal
+)
 }
 
 
@@ -72,7 +76,7 @@ inputTodo = (message)=>{
 			<div>
 			<h1>Todo App</h1>
 			<InputTodo inputTodo={this.inputTodo}/>
-			  <Todos todos={this.state.todos} finishTask = {this.finishTask} deleteTodo = {this.deleteTodo} />
+			  <Todos todos={this.state.todos} finishTask = {this.finishTask} deleteTodo = {this.deleteTodo} crossOut = {this.crossOut} />
 			  <Attribution />
 			</div>
 		)
