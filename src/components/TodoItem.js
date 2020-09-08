@@ -15,7 +15,7 @@ class TodoItem extends React.Component {
 		return (
 			<div className="container" style={this.crossOut()}>
 			<p className="checkmark" onClick = {this.props.finishTask.bind
-				(this, this.props.todo.id)}>&#10004; </p>
+				(this, this.props.todo.id)}> &#10004; </p>
 			<div> {this.props.todo.message} </div>
 			<div> {this.props.todo.date} </div>
 			<div onClick = {this.props.deleteTodo.bind(
