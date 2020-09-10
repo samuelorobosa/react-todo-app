@@ -16,7 +16,7 @@ class TodoItem extends React.Component {
 			<div className="container" style={this.crossOut()}>
 			
 			<input type="checkbox" 
-			onChange = {this.props.finishTask.bind (this, this.props.todo.id) 
+			onChange = {this.props.finishTask.bind (this, this.props.todo.id) }
 				    />
 			<div> 
 				    {this.props.todo.message} 
