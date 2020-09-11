@@ -17,7 +17,8 @@ class TodoItem extends React.Component {
 			
 			<input type="checkbox" 
 			onChange = {this.props.finishTask.bind (this, this.props.todo.id) }
-				    />
+			checked = {this.props.todo.completed}
+	    />
 			<div> 
 				    {this.props.todo.message} 
 		</div>
